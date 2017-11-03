@@ -55,9 +55,7 @@
     {
       "field_name": "personaldata",
       "label": "Personal Data",
-      "help_text": "yes or no",
-      "help_inline": true,
-      "preset": "select",
+      "preset": "multiple_checkbox",
       "choices": [
          {
            "value": "yes",
@@ -67,13 +65,11 @@
            "value": "no",
            "label": "No"
          }
-      ]
+                 ]
     },
     {
-      "field_name": "license_id",
+      "field_name": "license",
       "label": "License",
-      "form_snippet": "license.html",
-      "help_text": "License definitions and additional information can be found at http://opendefinition.org/",
       "form_placeholder": "eg. https://creativecommons.org/licenses/by/4.0/"
     },
     {
@@ -102,12 +98,12 @@
     {
       "field_name": "technology",
       "label": "Technology",
-      "form_placeholder": "eg. REST, WEB SERVICE SOAP, CSV, Data stream, OGC exchange service (WMS,Â…)"
+      "form_placeholder": "eg. REST, WEB SERVICE SOAP, CSV, Data stream, OGC exchange service (WMS,…)"
     },
     {
       "field_name": "namesystem",
       "label": "Name of the System",
-      "form_placeholder": "eg. eParking, BCBP (Bar Coded Boarding Passes), Â…"
+      "form_placeholder": "eg. eParking, BCBP (Bar Coded Boarding Passes), …"
     },
     {
       "field_name": "datasetmodel",
@@ -126,7 +122,7 @@
     },
     {
       "field_name": "datamodelspecific",
-      "label": "Data Model - Specific Data Model"
+      "label": "Data Model - Specific Data Model",
     },
     {
       "field_name": "datavolume",
@@ -141,6 +137,7 @@
     {
       "field_name": "dataarchiving",
       "label": "Data Archiving and preservation",
+      "form_snippet": "markdown.html",
       "form_placeholder": "eg. Zenodo"
     },
     {
@@ -156,9 +153,7 @@
     {
       "field_name": "accesslevel",
       "label": "Access Level",
-      "help_text": "With Approval, Without Approval or Open",
-      "help_inline": true,
-      "preset": "select",
+      "preset": "multiple_checkbox",
       "choices": [
          {
            "value": "withapproval",
@@ -183,30 +178,30 @@
       "field_name": "uri",
       "label": "URI",
       "form_placeholder": "eg. https://data.gov.uk/dataset/nptg"
-    }
+    },
   ],
   "resource_fields": [
     {
       "field_name": "url",
-      "label": "Recurso",
+      "label": "Resource",
       "preset": "resource_url_upload",
       "form_placeholder": "http://inia.es/datos/arboles.csv",
       "upload_label": "Archivo"
     },
     {
       "field_name": "name",
-      "label": "Nombre del Recurso",
+      "label": "Resource Name",
       "form_placeholder": "eg. January 2011 Gold Prices"
     },
     {
       "field_name": "description",
-      "label": "DescripciÃ³n",
+      "label": "Description",
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
     },
     {
       "field_name": "format",
-      "label": "Formato",
+      "label": "Format",
       "preset": "resource_format_autocomplete"
     }
   ]
